@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:id="@+id/tvDetails"
+        android:text="User Details"/>
+
+    <EditText
+        android:id="@+id/edUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/tvDetails"
+        android:hint="UserName"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addUserbtn"
+        android:layout_below="@+id/edUser"
+        android:layout_margin="30dp"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:background="@color/purple_200"
+/>
+
+
+</RelativeLayout>

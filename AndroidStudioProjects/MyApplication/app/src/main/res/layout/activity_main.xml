@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout tools:context=".MainActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout android:layout_height="110dp" android:layout_width="match_parent" android:background="@drawable/tabcolor" android:id="@+id/fl_topp"/>
+
+    <ImageView android:layout_height="100dp" android:layout_width="100dp" android:background="@drawable/itc" android:id="@+id/logo" android:layout_marginLeft="10dp" android:layout_marginTop="10dp"/>
+
+    <ImageView android:layout_height="40dp" android:layout_width="250dp" android:background="@drawable/cmstext" android:id="@+id/cms" android:layout_marginTop="40dp" android:layout_centerHorizontal="true" android:layout_alignParentTop="true"/>
+
+
+    -<RelativeLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/center" android:layout_centerInParent="true">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="180dp" android:id="@+id/rfid" android:layout_marginLeft="0dp" android:layout_marginTop="10dp" app:srcCompat="@drawable/rfid"/>
+
+    <EditText android:layout_height="50dp" android:layout_width="135dp" android:id="@+id/uniqueid" android:layout_marginLeft="190dp" android:layout_marginTop="66dp" android:textAlignment="center" android:hint="xxxxxxxxxx"/>
+
+    <ImageView android:layout_height="150dp" android:layout_width="150dp" android:id="@+id/tea" android:layout_marginLeft="0dp" android:layout_marginTop="30dp" app:srcCompat="@drawable/tea" android:layout_below="@id/uniqueid"/>
+
+    <ImageView android:layout_height="150dp" android:layout_width="150dp" android:id="@+id/tea_entry" android:layout_marginLeft="30dp" android:layout_marginTop="30dp" app:srcCompat="@drawable/numback" android:layout_below="@id/uniqueid" android:layout_toEndOf="@id/tea"/>
+
+    <View android:layout_height="35dp" android:layout_width="100dp" android:background="@drawable/add" android:id="@+id/add_tea" android:layout_marginLeft="25dp" android:layout_below="@id/tea" android:layout_alignParentBottom="@id/tea"/>
+
+    <View android:layout_height="35dp" android:layout_width="100dp" android:background="@drawable/reset" android:id="@+id/reset_tea" android:layout_marginLeft="80dp" android:layout_below="@id/tea" android:layout_toEndOf="@id/add_tea" android:layout_alignParentBottom="@id/tea"/>
+
+    <ImageView android:layout_height="150dp" android:layout_width="150dp" android:id="@+id/samosa" android:layout_marginLeft="0dp" android:layout_marginTop="50dp" app:srcCompat="@drawable/samosa" android:layout_below="@id/tea"/>
+
+    <ImageView android:layout_height="150dp" android:layout_width="150dp" android:id="@+id/samosa_entry" android:layout_marginLeft="30dp" android:layout_marginTop="50dp" app:srcCompat="@drawable/numback" android:layout_below="@id/tea" android:layout_toEndOf="@id/samosa"/>
+
+    <View android:layout_height="35dp" android:layout_width="100dp" android:background="@drawable/add" android:id="@+id/add_samosa" android:layout_marginLeft="25dp" android:layout_below="@id/samosa" android:layout_alignParentBottom="@id/samosa"/>
+
+    <View android:layout_height="35dp" android:layout_width="100dp" android:background="@drawable/reset" android:id="@+id/reset_samosa" android:layout_marginLeft="80dp" android:layout_below="@id/samosa_entry" android:layout_toEndOf="@id/add_samosa" android:layout_alignParentBottom="@id/samosa"/>
+
+    <Button android:layout_height="50dp" android:layout_width="140dp" android:id="@+id/btn_submit" android:layout_marginLeft="15dp" android:layout_marginTop="50dp" android:layout_below="@id/samosa" android:layout_alignParentBottom="@id/samosa" android:text="Submit" android:backgroundTint="#8a4cff"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="100dp" android:id="@+id/status" android:layout_marginLeft="200dp" android:layout_marginTop="50dp" android:textAlignment="center" android:hint="STATUS" android:layout_below="@id/samosa_entry" android:backgroundTint="@color/material_on_surface_emphasis_high_type" android:textStyle="bold"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tv_tea" android:layout_marginLeft="245dp" android:layout_marginTop="210dp" android:textAlignment="center" android:textStyle="bold" android:textSize="30sp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/tv_samosa" android:layout_marginLeft="245dp" android:layout_marginTop="410dp" android:textAlignment="center" android:textStyle="bold" android:textSize="30sp"/>
+
+</RelativeLayout>
+
+</RelativeLayout>
