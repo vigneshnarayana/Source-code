@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dispose">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AssetDisposing">
+
+        <ImageView
+            android:id="@+id/img_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/top"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSET MANAGEMENT SYSTEM"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSET DISPOSE"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHOOSE LOCATION"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/dis_loc"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="200dp"/>
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCAN ASSET"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="130dp"/>
+
+        <EditText
+            android:id="@+id/dis_ass"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="xxxxxx"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="200dp"/>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRM ASSET"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="180dp"/>
+
+        <EditText
+            android:id="@+id/dis_ass1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="xxxxxx"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="200dp"/>
+
+        <Button
+
+            android:id="@+id/btn_dispose"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="DISPOSE"
+            android:textSize="16dp"
+            android:backgroundTint="@color/top"
+            android:layout_below="@id/img_top"
+            android:layout_marginTop="240dp"
+            android:onClick="Dispose"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

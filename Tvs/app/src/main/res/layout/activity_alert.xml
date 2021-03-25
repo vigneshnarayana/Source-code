@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activitys.AlertActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/tvsBlue"
+        app:popupTheme="@style/Theme.Tvs.PopupOverlay"
+        android:theme="@style/Tool"
+        tools:ignore="MissingConstraints"
+        android:elevation="40dp" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        style="@style/CustomDropDownTilStyle"-->
+<!--        android:layout_margin="8dp"-->
+<!--        android:hint="@string/animals">-->
+
+<!--        <androidx.appcompat.widget.AppCompatAutoCompleteTextView-->
+<!--            android:id="@+id/animal_actv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:focusable="false"-->
+<!--            android:inputType="none" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:prompt="@string/Select_Alert_Message"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:background="@color/tvsBlue"-->
+<!--        android:spinnerMode="dialog"-->
+<!--        android:translationX="5dp"-->
+<!--        android:translationY="5dp"-->
+<!--        android:drawableEnd="@drawable/arrowdown"-->
+<!--        />-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="150dp"
+>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/customerSpinnerLayout"
+        style="@style/CustomDropDownTilStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Select_Alert_Message"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/customerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:inputType="none"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:endIconDrawable="@drawable/arrowdown" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#1E88E5"
+        android:layout_marginTop="15sp"
+        android:textSize="20dp"
+        app:cornerRadius="20dp"
+        android:text="Submit"
+        android:drawableEnd="@drawable/send"/>
+</LinearLayout>
+
+
+</LinearLayout>

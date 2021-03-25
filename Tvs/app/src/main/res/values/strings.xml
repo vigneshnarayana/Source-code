@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tvs</string>
+    <string name="tvs">TVS</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mr.Engineer</string>
+    <string name="nav_header_subtitle">engineer@tvs.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Info</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">My Profile</string>
+    <string name="menu_slideshow">More</string>
+    <string name="Home2">Home</string>
+    <string name="logout">Logout</string>
+    <string name="Select_Alert_Message">Select Alert Message</string>
+    <string name="animals">Animals</string>
+</resources>

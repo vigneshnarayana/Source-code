@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RFID-ZEBRA</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="acess_read_write_memory_bank_array">
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+        <item>ACCESS PASSWORD</item>
+        <item>KILL PASSWORD</item>
+    </string-array>
+    <string name="msg_read_succeed">Read succeed</string>
+    <string name="err_access_op_failed">Tag Write operation Failed</string>
+    <string name="battery_status__critical_message">Battery is critical !\nPlease charge device.</string>
+    <string name="msg_write_succeed">Write succeed</string>
+</resources>

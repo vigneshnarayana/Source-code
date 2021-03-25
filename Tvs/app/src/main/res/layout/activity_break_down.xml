@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activitys.BreakDown">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/tvsBlue"
+        app:popupTheme="@style/Theme.Tvs.PopupOverlay"
+        android:theme="@style/Tool"
+        tools:ignore="MissingConstraints"
+        android:elevation="40dp" />
+    <LinearLayout
+        android:id="@+id/id1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:id="@+id/visible"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <com.imankur.analogclockview.AnalogClock
+                android:layout_width="160dp"
+                android:background="@drawable/tvsiii"
+                android:layout_height="150dp"/>
+            <Chronometer
+                android:id="@+id/chronometeraction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textSize="24dp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Breakdownlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/send"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/breakdown"
+                    android:textSize="18sp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/sendtxt"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Electric BD"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/send12"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/machinebd"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/send12txt"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+
+                    android:text="Machine BD"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="right"
+
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/send13"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/breakdown"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:id="@+id/send13txt"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:text="Other BD"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <!--                <Button-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Pause"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    android:onClick="pauseChronomer"/>-->
+        <!--                <Button-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Reset"-->
+        <!--                    android:layout_gravity="center"-->
+
+        <!--                    android:onClick="resetChronomer"/>-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_problemSolved"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#00897B"
+            android:text="Proplem Solved"
+            android:layout_gravity="center"
+            android:onClick="btnBreakdown"
+            app:cornerRadius="20dp"
+         android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:gravity="center"-->
+<!--                 android:onClick="test"-->
+<!--            android:text="test"/>-->
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

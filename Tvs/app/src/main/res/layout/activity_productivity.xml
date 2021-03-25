@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.activitys.Productivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/tvsBlue"
+        app:popupTheme="@style/Theme.Tvs.PopupOverlay"
+        android:theme="@style/Tool"
+        tools:ignore="MissingConstraints"
+        android:elevation="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="80dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="@color/tvsBlue"
+            >
+            <!--this is the actual edit text which takes the input-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_partNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:hint="Part number"
+                android:focusable="true"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="@color/tvsBlue"
+            android:layout_weight="1"
+            >
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/tv_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:hint="Total Quantity"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="@color/tvsBlue"
+            android:layout_weight="1"
+            >
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/tv_acceptCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:hint="Accecpted"
+                android:gravity="center"
+                tools:ignore="DuplicateIds" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="@color/tvsBlue"
+            android:layout_weight="1"
+            >
+            <!--this is the actual edit text which takes the input-->
+            <EditText
+                android:id="@+id/tv_rejectCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:singleLine="true"
+                android:gravity="center"
+                android:hint="Rejected"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_acpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#368F39"
+            app:cornerRadius="10dp"
+            android:text="Accecpt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_rej"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reject"
+            app:cornerRadius="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#FF6F42"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#1E88E5"
+        android:text="Submit"
+        app:cornerRadius="10dp"
+        android:textSize="20dp"/>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_post"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:onClick="Post"-->
+<!--        android:backgroundTint="#00897B"-->
+<!--        android:text="Complete"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="30sp"/>-->
+
+</LinearLayout>
