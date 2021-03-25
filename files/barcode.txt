@@ -1,0 +1,12 @@
+
+
+The following types of barcodes can be read through the app. 
+At the same time it can able to read multiple codes in this types.
+
+Barcode Types:
+EAN-8,
+EAN-13,
+UPC-A,
+UPC-E,
+CODE 39,
+CODE 128.
